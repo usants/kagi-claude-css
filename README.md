@@ -48,19 +48,19 @@ For best results with the dark theme:
 ## Color Palette
 
 ### Dark Mode
-| Role | Color | Hex |
-|------|-------|-----|
-| Background | ![#2F2B26](https://via.placeholder.com/16/2F2B26/2F2B26?text=+) | `#2F2B26` |
-| Background Dark | ![#292521](https://via.placeholder.com/16/292521/292521?text=+) | `#292521` |
-| Background Light | ![#3D3832](https://via.placeholder.com/16/3D3832/3D3832?text=+) | `#3D3832` |
-| Text | ![#E8E4DF](https://via.placeholder.com/16/E8E4DF/E8E4DF?text=+) | `#E8E4DF` |
-| Text Muted | ![#A8A29E](https://via.placeholder.com/16/A8A29E/A8A29E?text=+) | `#A8A29E` |
-| Accent | ![#D97706](https://via.placeholder.com/16/D97706/D97706?text=+) | `#D97706` |
+| Role | Hex |
+|------|-----|
+| Background | `#2F2B26` 🟤 |
+| Background Dark | `#292521` |
+| Background Light | `#3D3832` |
+| Text | `#E8E4DF` |
+| Text Muted | `#A8A29E` |
+| Accent | `#D97706` 🟠 |
 
 ### Light Mode
-| Role | Color | Hex |
-|------|-------|-----|
-| Accent | ![#7A7A7A](https://via.placeholder.com/16/7A7A7A/7A7A7A?text=+) | `#7A7A7A` |
+| Role | Hex |
+|------|-----|
+| Accent | `#7A7A7A` |
 
 ## Customization
 
