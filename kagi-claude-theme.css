@@ -1,0 +1,868 @@
+/* ===========================================
+   Kagi Custom Theme
+   - Default: Kagi's Native (untouched)
+   - Light: cidian.co theme (monochromatic grey)
+   - Dark: Anthropic Claude theme (warm brown + orange)
+   =========================================== */
+
+/* ============================================
+   DEFAULT THEME: Kagi dark theme
+   LIGHT THEME: Kagi light theme with accent color changes
+   ============================================ */
+
+.theme_light {
+  --custom-accent: #7A7A7A;
+}
+
+.theme_light .logo svg path {
+  fill: var(--custom-accent) !important;
+}
+
+.theme_light a {
+  color: var(--custom-accent) !important;
+}
+
+.theme_light .dd-toggle-label,
+.theme_light .dd-toggle-label .textContent,
+.theme_light .filter-item .textContent,
+.theme_light ._0_k_ui_dropdown_first_item span,
+.theme_light .k_ui_dropdown_first_item span {
+  color: var(--custom-accent) !important;
+}
+
+.theme_light .arrow_dd,
+.theme_light svg.arrow_dd {
+  color: var(--custom-accent) !important;
+}
+
+.theme_light .arrow_dd path,
+.theme_light svg.arrow_dd path {
+  stroke: var(--custom-accent) !important;
+  fill: var(--custom-accent) !important;
+}
+
+.theme_light .results_meta i,
+.theme_light span.results_meta i,
+.theme_light .num_results i {
+  color: var(--custom-accent) !important;
+}
+
+.theme_light button[title="More"] svg,
+.theme_light .__sri_more_menu_box button svg,
+.theme_light .icon_dots svg {
+  color: var(--custom-accent) !important;
+}
+
+.theme_light .quick-answer-trigger-link,
+.theme_light ._0_quick_answer_trigger_btn {
+  border-color: var(--custom-accent) !important;
+}
+
+.theme_light .quick-answer-trigger-link svg,
+.theme_light ._0_quick_answer_trigger_btn svg {
+  color: var(--custom-accent) !important;
+}
+
+.theme_light .dd-toggle-label[data-header="United States (US)"] .textContent::after {
+  color: var(--custom-accent) !important;
+}
+
+/* ============================================
+   DARK THEME: Original CSS, scoped
+   ============================================ */
+
+.theme_moon_dark,
+.theme_dark {
+  --custom-bg: #2F2B26;
+  --custom-bg-dark: #292521;
+  --custom-bg-light: #3D3832;
+  --custom-text: #E8E4DF;
+  --custom-text-muted: #A8A29E;
+  --custom-accent: #D97706;
+  
+  --font-main: inherit;
+  --color-primary: var(--custom-text);
+  --color-primary_hover: var(--custom-text);
+  --page-text-color: var(--custom-text);
+  --background-color: var(--custom-bg);
+  --color-primary_visited: var(--custom-text-muted);
+  --color_link: var(--custom-accent);
+  --footer-bg: var(--custom-bg-dark);
+  --color-search-input: var(--custom-bg-light);
+  --inline-widget-bg: var(--custom-bg-light);
+  --related-item-bg: var(--custom-bg-light);
+  --search-result-date-bg: var(--custom-bg-light);
+  --search-result-date-new-bg: var(--custom-accent);
+  --m_sri_gap_color: var(--custom-bg);
+  
+  --app-bg: var(--custom-bg);
+  --search-result-title: var(--custom-text);
+  --primary-visited: var(--custom-text-muted);
+  --result-item-title-border: var(--custom-bg-light);
+  --site_info_bottom_bg: var(--custom-bg-dark);
+  --quick-search-bg: var(--custom-bg-dark);
+}
+
+.theme_moon_dark body,
+.theme_dark body {
+  background-color: var(--custom-bg) !important;
+}
+
+/* Header */
+.theme_moon_dark .footer.footer-landing,
+.theme_dark .footer.footer-landing,
+.theme_moon_dark header.app-header.app-content-box,
+.theme_dark header.app-header.app-content-box {
+  background-color: var(--custom-bg) !important;
+  border: 0;
+}
+
+.theme_moon_dark .settings-page,
+.theme_dark .settings-page,
+.theme_moon_dark .settings_page,
+.theme_dark .settings_page,
+.theme_moon_dark .app-content,
+.theme_dark .app-content,
+.theme_moon_dark .k_ui_container,
+.theme_dark .k_ui_container,
+.theme_moon_dark main,
+.theme_dark main {
+  background-color: var(--custom-bg) !important;
+}
+
+/* Settings cards/panels */
+.theme_moon_dark .settings-card,
+.theme_dark .settings-card,
+.theme_moon_dark .settings_card,
+.theme_dark .settings_card,
+.theme_moon_dark .k_ui_card,
+.theme_dark .k_ui_card,
+.theme_moon_dark .card,
+.theme_dark .card,
+.theme_moon_dark .panel,
+.theme_dark .panel,
+.theme_moon_dark [class*="settings"],
+.theme_dark [class*="settings"] {
+  background-color: var(--custom-bg-light) !important;
+  color: var(--custom-text) !important;
+}
+
+/* Form inputs throughout */
+.theme_moon_dark .search-form-input,
+.theme_dark .search-form-input,
+.theme_moon_dark input[type="text"],
+.theme_dark input[type="text"],
+.theme_moon_dark input[type="email"],
+.theme_dark input[type="email"],
+.theme_moon_dark input[type="password"],
+.theme_dark input[type="password"],
+.theme_moon_dark input[type="search"],
+.theme_dark input[type="search"],
+.theme_moon_dark textarea,
+.theme_dark textarea,
+.theme_moon_dark select,
+.theme_dark select,
+.theme_moon_dark .k_ui_search_input,
+.theme_dark .k_ui_search_input,
+.theme_moon_dark ._0_search_input,
+.theme_dark ._0_search_input {
+  background-color: var(--custom-bg-light) !important;
+  color: var(--custom-text) !important;
+  border-color: var(--custom-bg-light) !important;
+}
+
+/* Buttons */
+.theme_moon_dark .btn.--yellow,
+.theme_dark .btn.--yellow,
+.theme_moon_dark .btn.--primary,
+.theme_dark .btn.--primary,
+.theme_moon_dark button[type="submit"],
+.theme_dark button[type="submit"] {
+  background: var(--custom-accent) !important;
+  color: var(--custom-bg-dark) !important;
+}
+
+/* Search results */
+.theme_moon_dark .search-result,
+.theme_dark .search-result,
+.theme_moon_dark .sri-group,
+.theme_dark .sri-group {
+  background-color: var(--custom-bg) !important;
+}
+
+.theme_moon_dark .__sri-time,
+.theme_dark .__sri-time,
+.theme_moon_dark .search-result-date,
+.theme_dark .search-result-date,
+.theme_moon_dark .sri-time,
+.theme_dark .sri-time {
+  background-color: var(--custom-bg-light) !important;
+  color: var(--custom-text) !important;
+}
+
+.theme_moon_dark .sri-desc,
+.theme_dark .sri-desc,
+.theme_moon_dark .__sri-desc,
+.theme_dark .__sri-desc,
+.theme_moon_dark .search-result-desc,
+.theme_dark .search-result-desc,
+.theme_moon_dark p,
+.theme_dark p,
+.theme_moon_dark span,
+.theme_dark span {
+  color: var(--custom-text-muted) !important;
+}
+
+.theme_moon_dark .__sri-url,
+.theme_dark .__sri-url,
+.theme_moon_dark .sri-url,
+.theme_dark .sri-url,
+.theme_moon_dark .search-result-url,
+.theme_dark .search-result-url {
+  color: var(--custom-text-muted) !important;
+}
+
+/* Links */
+.theme_moon_dark a,
+.theme_dark a {
+  color: var(--custom-accent) !important;
+}
+
+.theme_moon_dark a:visited,
+.theme_dark a:visited {
+  color: var(--custom-text-muted) !important;
+}
+
+/* Search input container */
+.theme_moon_dark ._0_search_input,
+.theme_dark ._0_search_input,
+.theme_moon_dark .search-form,
+.theme_dark .search-form,
+.theme_moon_dark .search-form-container,
+.theme_dark .search-form-container,
+.theme_moon_dark ._0_search_form,
+.theme_dark ._0_search_form {
+  background-color: var(--custom-bg) !important;
+}
+
+/* Header buttons/icons area */
+.theme_moon_dark .app-header-buttons,
+.theme_dark .app-header-buttons,
+.theme_moon_dark .header-actions,
+.theme_dark .header-actions,
+.theme_moon_dark ._0_header_actions,
+.theme_dark ._0_header_actions,
+.theme_moon_dark .k_ui_header_buttons,
+.theme_dark .k_ui_header_buttons {
+  background-color: transparent !important;
+}
+
+.theme_moon_dark .search-form-wrapper,
+.theme_dark .search-form-wrapper,
+.theme_moon_dark ._0_search_wrapper,
+.theme_dark ._0_search_wrapper {
+  background-color: var(--custom-bg) !important;
+}
+
+/* Remove search bar shadows */
+.theme_moon_dark [class*="search"],
+.theme_dark [class*="search"] {
+  box-shadow: none !important;
+}
+
+/* Remove search bar separator line */
+.theme_moon_dark .sfi_sep,
+.theme_dark .sfi_sep {
+  display: none !important;
+}
+
+/* Domain info modal - backgrounds */
+.theme_moon_dark #domainInfoModal,
+.theme_dark #domainInfoModal,
+.theme_moon_dark #domainInfoModal *,
+.theme_dark #domainInfoModal *,
+.theme_moon_dark .ranked-box-overlay,
+.theme_dark .ranked-box-overlay,
+.theme_moon_dark .ranked-box-overlay *,
+.theme_dark .ranked-box-overlay *,
+.theme_moon_dark .domain-info-modal,
+.theme_dark .domain-info-modal,
+.theme_moon_dark .domain-info-modal *,
+.theme_dark .domain-info-modal *,
+.theme_moon_dark .ranked-box-wrapper,
+.theme_dark .ranked-box-wrapper,
+.theme_moon_dark .ranked-box-wrapper *,
+.theme_dark .ranked-box-wrapper *,
+.theme_moon_dark .ranked-box-center,
+.theme_dark .ranked-box-center,
+.theme_moon_dark .ranked-box-center *,
+.theme_dark .ranked-box-center *,
+.theme_moon_dark .d-info-section,
+.theme_dark .d-info-section,
+.theme_moon_dark .d-info-section *,
+.theme_dark .d-info-section *,
+.theme_moon_dark [class*="d-info"],
+.theme_dark [class*="d-info"],
+.theme_moon_dark [class*="d-info"] *,
+.theme_dark [class*="d-info"] * {
+  background-color: transparent !important;
+  background: transparent !important;
+}
+
+/* Outer modal overlay transparent */
+.theme_moon_dark #domainInfoModal.ranked-box-overlay,
+.theme_dark #domainInfoModal.ranked-box-overlay {
+  background-color: transparent !important;
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+/* Inner modal styled */
+.theme_moon_dark .ranked-box-wrapper.domain-info-modal,
+.theme_dark .ranked-box-wrapper.domain-info-modal {
+  background-color: var(--custom-bg-light) !important;
+  background: var(--custom-bg-light) !important;
+  padding: 12px !important;
+  margin: 0 !important;
+}
+
+/* Modal text colors */
+.theme_moon_dark #domainInfoModal h3,
+.theme_dark #domainInfoModal h3,
+.theme_moon_dark #domainInfoModal p,
+.theme_dark #domainInfoModal p,
+.theme_moon_dark #domainInfoModal span,
+.theme_dark #domainInfoModal span,
+.theme_moon_dark #domainInfoModal a,
+.theme_dark #domainInfoModal a,
+.theme_moon_dark .ranked-box-overlay h3,
+.theme_dark .ranked-box-overlay h3,
+.theme_moon_dark .ranked-box-overlay p,
+.theme_dark .ranked-box-overlay p,
+.theme_moon_dark .ranked-box-overlay span,
+.theme_dark .ranked-box-overlay span {
+  color: var(--custom-text) !important;
+}
+
+/* Modal spacing */
+.theme_moon_dark .ranked-box-wrapper.domain-info-modal .ranked-box-center,
+.theme_dark .ranked-box-wrapper.domain-info-modal .ranked-box-center {
+  padding: 0 !important;
+  margin: 0 !important;
+  gap: 8px !important;
+}
+
+.theme_moon_dark .ranked-box-wrapper.domain-info-modal .d-info-section,
+.theme_dark .ranked-box-wrapper.domain-info-modal .d-info-section {
+  padding: 4px 0 !important;
+  margin: 0 !important;
+}
+
+/* Tighten header area */
+.theme_moon_dark .d-info-box-title-header,
+.theme_dark .d-info-box-title-header,
+.theme_moon_dark .d-info-box-title-header.--trackers,
+.theme_dark .d-info-box-title-header.--trackers {
+  padding: 0 !important;
+  margin: 0 0 8px 0 !important;
+}
+
+.theme_moon_dark .d-info-domain-name,
+.theme_dark .d-info-domain-name,
+.theme_moon_dark ._0_d-info-domain-name,
+.theme_dark ._0_d-info-domain-name {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Tighten the info body rows */
+.theme_moon_dark .d-info-body,
+.theme_dark .d-info-body,
+.theme_moon_dark .d-info-section.d-info-body,
+.theme_dark .d-info-section.d-info-body {
+  gap: 2px !important;
+  padding: 0 !important;
+}
+
+.theme_moon_dark .__section-item,
+.theme_dark .__section-item,
+.theme_moon_dark .__section-item-icon,
+.theme_dark .__section-item-icon {
+  padding: 2px 0 !important;
+  margin: 0 !important;
+}
+
+/* Hide modal title and close button */
+.theme_moon_dark .d-info-domain-title,
+.theme_dark .d-info-domain-title,
+.theme_moon_dark ._0_d-info-domain-title,
+.theme_dark ._0_d-info-domain-title,
+.theme_moon_dark .ranked-box-close,
+.theme_dark .ranked-box-close {
+  display: none !important;
+}
+
+/* Hide extra line breaks in domain title */
+.theme_moon_dark ._0_d-info-domain-title br,
+.theme_dark ._0_d-info-domain-title br {
+  display: none !important;
+}
+
+/* Modal position - center on right side */
+.theme_moon_dark #domainInfoModal.ranked-box-overlay,
+.theme_dark #domainInfoModal.ranked-box-overlay,
+.theme_moon_dark .ranked-box-overlay.--open,
+.theme_dark .ranked-box-overlay.--open {
+  position: fixed !important;
+  top: 50% !important;
+  left: auto !important;
+  right: 100px !important;
+  transform: translateY(-50%) !important;
+}
+
+/* Orange logo on homepage */
+.theme_moon_dark .logo svg path,
+.theme_dark .logo svg path {
+  fill: var(--custom-accent) !important;
+}
+
+/* Quick Answer button - orange, hide text */
+.theme_moon_dark .quick-answer-trigger-link,
+.theme_dark .quick-answer-trigger-link,
+.theme_moon_dark ._0_quick_answer_trigger_btn,
+.theme_dark ._0_quick_answer_trigger_btn {
+  background-color: var(--custom-accent) !important;
+  border-color: var(--custom-accent) !important;
+  width: 40px !important;
+  overflow: hidden !important;
+  padding: 4px 8px !important;
+}
+
+.theme_moon_dark .quick-answer-trigger-link svg,
+.theme_dark .quick-answer-trigger-link svg,
+.theme_moon_dark ._0_quick_answer_trigger_btn svg,
+.theme_dark ._0_quick_answer_trigger_btn svg {
+  color: var(--custom-bg-dark) !important;
+}
+
+/* Hide dropdown arrow icons on filter buttons */
+.theme_moon_dark .dd-toggle-label .btn-icon,
+.theme_dark .dd-toggle-label .btn-icon,
+.theme_moon_dark .dd-toggle-label .btn-icon--right,
+.theme_dark .dd-toggle-label .btn-icon--right,
+.theme_moon_dark .filter-item .btn-icon,
+.theme_dark .filter-item .btn-icon,
+.theme_moon_dark .filter-item .btn-icon--right,
+.theme_dark .filter-item .btn-icon--right,
+.theme_moon_dark .arrow_dd.--caret,
+.theme_dark .arrow_dd.--caret,
+.theme_moon_dark i.arrow_dd.--caret,
+.theme_dark i.arrow_dd.--caret {
+  display: none !important;
+}
+
+/* Orange text on filter/toggle buttons */
+.theme_moon_dark .dd-toggle-label,
+.theme_dark .dd-toggle-label,
+.theme_moon_dark .dd-toggle-label .textContent,
+.theme_dark .dd-toggle-label .textContent,
+.theme_moon_dark .filter-item .textContent,
+.theme_dark .filter-item .textContent,
+.theme_moon_dark .sidebar-filter-nav-form .textContent,
+.theme_dark .sidebar-filter-nav-form .textContent,
+.theme_moon_dark ._0_k_ui_dropdown_first_item span,
+.theme_dark ._0_k_ui_dropdown_first_item span,
+.theme_moon_dark .k_ui_dropdown_first_item span,
+.theme_dark .k_ui_dropdown_first_item span {
+  color: var(--custom-accent) !important;
+}
+
+/* Quick Answer button - keep icon, hide text */
+.theme_moon_dark .quick-answer-trigger-link,
+.theme_dark .quick-answer-trigger-link,
+.theme_moon_dark ._0_quick_answer_trigger_btn,
+.theme_dark ._0_quick_answer_trigger_btn {
+  font-size: 0 !important;
+}
+
+.theme_moon_dark .quick-answer-trigger-link svg,
+.theme_dark .quick-answer-trigger-link svg,
+.theme_moon_dark ._0_quick_answer_trigger_btn svg,
+.theme_dark ._0_quick_answer_trigger_btn svg {
+  font-size: initial !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+/* Quick Answer button - reset to original style, just hide text */
+.theme_moon_dark .quick-answer-trigger-link,
+.theme_dark .quick-answer-trigger-link,
+.theme_moon_dark ._0_quick_answer_trigger_btn,
+.theme_dark ._0_quick_answer_trigger_btn {
+  background-color: transparent !important;
+  border-color: var(--custom-accent) !important;
+  padding: 4px 8px !important;
+}
+
+/* Hide the text node by making button only fit the icon */
+.theme_moon_dark .quick-answer-trigger-link,
+.theme_dark .quick-answer-trigger-link,
+.theme_moon_dark ._0_quick_answer_trigger_btn,
+.theme_dark ._0_quick_answer_trigger_btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0 !important;
+}
+
+/* Keep icon original color (accent) */
+.theme_moon_dark .quick-answer-trigger-link svg,
+.theme_dark .quick-answer-trigger-link svg,
+.theme_moon_dark ._0_quick_answer_trigger_btn svg,
+.theme_dark ._0_quick_answer_trigger_btn svg {
+  color: var(--custom-accent) !important;
+  flex-shrink: 0 !important;
+}
+
+/* Hide the text using clip */
+.theme_moon_dark .quick-answer-trigger-link,
+.theme_dark .quick-answer-trigger-link {
+  text-indent: -9999px !important;
+  line-height: 0 !important;
+}
+
+.theme_moon_dark .quick-answer-trigger-link svg,
+.theme_dark .quick-answer-trigger-link svg {
+  text-indent: 0 !important;
+}
+
+/* More button dots orange */
+.theme_moon_dark button[title="More"] svg,
+.theme_dark button[title="More"] svg,
+.theme_moon_dark .__sri_more_menu_box button svg,
+.theme_dark .__sri_more_menu_box button svg,
+.theme_moon_dark .icon_dots svg,
+.theme_dark .icon_dots svg,
+.theme_moon_dark use[href="#icon_dots"],
+.theme_dark use[href="#icon_dots"] {
+  color: var(--custom-accent) !important;
+}
+
+/* Hide only the dots icon next to "More" text in nav */
+.theme_moon_dark .more_search_dropdown_box ._0_k_ui_dropdown_first_item svg,
+.theme_dark .more_search_dropdown_box ._0_k_ui_dropdown_first_item svg,
+.theme_moon_dark .serp_nav_end ._0_k_ui_dropdown_first_item svg,
+.theme_dark .serp_nav_end ._0_k_ui_dropdown_first_item svg,
+.theme_moon_dark ._0_more_search_dropdown ._0_k_ui_dropdown_first_item svg,
+.theme_dark ._0_more_search_dropdown ._0_k_ui_dropdown_first_item svg {
+  display: none !important;
+}
+
+/* Orange numbers in results meta */
+.theme_moon_dark .results_meta i,
+.theme_dark .results_meta i,
+.theme_moon_dark span.results_meta i,
+.theme_dark span.results_meta i,
+.theme_moon_dark .num_results i,
+.theme_dark .num_results i {
+  color: var(--custom-accent) !important;
+}
+
+/* Target just the Quick Answer button */
+.theme_moon_dark button.quick-answer-trigger-link,
+.theme_dark button.quick-answer-trigger-link,
+.theme_moon_dark button._0_quick_answer_trigger_btn,
+.theme_dark button._0_quick_answer_trigger_btn {
+  position: absolute !important;
+  top: -36px !important;
+  right: 0px !important;
+}
+
+/* Selected theme button - orange */
+.theme_moon_dark ._0_app_theme_switch_box input[type="radio"]:checked + label,
+.theme_dark ._0_app_theme_switch_box input[type="radio"]:checked + label,
+.theme_moon_dark .setting input[type="radio"]:checked + label,
+.theme_dark .setting input[type="radio"]:checked + label {
+  background-color: var(--custom-accent) !important;
+  color: var(--custom-bg-dark) !important;
+  border-color: var(--custom-accent) !important;
+}
+
+/* Make sure the icon/text inside is also dark */
+.theme_moon_dark ._0_app_theme_switch_box input[type="radio"]:checked + label span,
+.theme_dark ._0_app_theme_switch_box input[type="radio"]:checked + label span,
+.theme_moon_dark ._0_app_theme_switch_box input[type="radio"]:checked + label i,
+.theme_dark ._0_app_theme_switch_box input[type="radio"]:checked + label i,
+.theme_moon_dark ._0_app_theme_switch_box input[type="radio"]:checked + label svg,
+.theme_dark ._0_app_theme_switch_box input[type="radio"]:checked + label svg {
+  color: var(--custom-bg-dark) !important;
+}
+
+/* Unselected theme buttons - match background but keep border */
+.theme_moon_dark ._0_app_theme_switch_box label,
+.theme_dark ._0_app_theme_switch_box label,
+.theme_moon_dark .setting label,
+.theme_dark .setting label {
+  background-color: var(--custom-bg-light) !important;
+  color: var(--custom-text) !important;
+}
+
+/* Default button text color to match Light */
+.theme_moon_dark ._0_app_theme_switch_box label[for="theme_system"],
+.theme_dark ._0_app_theme_switch_box label[for="theme_system"],
+.theme_moon_dark ._0_app_theme_switch_box label[for="theme_system"] span,
+.theme_dark ._0_app_theme_switch_box label[for="theme_system"] span {
+  color: var(--custom-text-muted) !important;
+}
+
+/* Copy button text - dark to match background */
+.theme_moon_dark button.btn.--primary span,
+.theme_dark button.btn.--primary span,
+.theme_moon_dark button.btn.--primary,
+.theme_dark button.btn.--primary,
+.theme_moon_dark .quick-settings button.btn.--primary,
+.theme_dark .quick-settings button.btn.--primary {
+  color: var(--custom-bg-dark) !important;
+}
+
+/* Toggle switch - orange when checked */
+.theme_moon_dark .k_ui_toggle_switch input:checked ~ .k_ui_toggle_switch_bar,
+.theme_dark .k_ui_toggle_switch input:checked ~ .k_ui_toggle_switch_bar,
+.theme_moon_dark .k_ui_toggle_switch.--enabled .k_ui_toggle_switch_bar,
+.theme_dark .k_ui_toggle_switch.--enabled .k_ui_toggle_switch_bar,
+.theme_moon_dark input[type="checkbox"]:checked ~ .k_ui_toggle_switch_bar,
+.theme_dark input[type="checkbox"]:checked ~ .k_ui_toggle_switch_bar,
+.theme_moon_dark input[type="checkbox"]:checked + .k_ui_toggle_switch_bar,
+.theme_dark input[type="checkbox"]:checked + .k_ui_toggle_switch_bar {
+  background-color: var(--custom-accent) !important;
+  border-color: var(--custom-accent) !important;
+}
+
+/* Ranking buttons - selected state orange */
+.theme_moon_dark .k_ui_btn_group .k_ui_btn input:checked + label,
+.theme_dark .k_ui_btn_group .k_ui_btn input:checked + label,
+.theme_moon_dark ._0_d_info_ranking .k_ui_btn input:checked + label,
+.theme_dark ._0_d_info_ranking .k_ui_btn input:checked + label,
+.theme_moon_dark .d-info-section input[type="radio"]:checked + label,
+.theme_dark .d-info-section input[type="radio"]:checked + label,
+.theme_moon_dark .k_ui_btn input[type="radio"]:checked + label,
+.theme_dark .k_ui_btn input[type="radio"]:checked + label {
+  background-color: var(--custom-accent) !important;
+  border-color: var(--custom-accent) !important;
+}
+
+/* Dropdown list background */
+.theme_moon_dark .dd-list,
+.theme_dark .dd-list,
+.theme_moon_dark div.dd-list,
+.theme_dark div.dd-list,
+.theme_moon_dark .dropdown .dd-list,
+.theme_dark .dropdown .dd-list,
+.theme_moon_dark .dropdown-open .dd-list,
+.theme_dark .dropdown-open .dd-list {
+  background-color: var(--custom-bg-light) !important;
+  border-color: var(--custom-bg-light) !important;
+}
+
+/* Dropdown checkmark orange */
+.theme_moon_dark .dd-list .inner-label.checked::before,
+.theme_dark .dd-list .inner-label.checked::before,
+.theme_moon_dark .dd-list a.inner-label.checked::before,
+.theme_dark .dd-list a.inner-label.checked::before,
+.theme_moon_dark .dropdown .inner-label.checked::before,
+.theme_dark .dropdown .inner-label.checked::before {
+  color: var(--custom-accent) !important;
+}
+
+/* Dropdown search input - normal state */
+.theme_moon_dark .list_filter_wrpr input,
+.theme_dark .list_filter_wrpr input,
+.theme_moon_dark .dd-list input[type="search"],
+.theme_dark .dd-list input[type="search"],
+.theme_moon_dark .dd-list .list_filter_wrpr input,
+.theme_dark .dd-list .list_filter_wrpr input {
+  background-color: var(--custom-bg) !important;
+  border-color: var(--custom-text-muted) !important;
+  color: var(--custom-text) !important;
+}
+
+/* Dropdown search input - focus state orange ring */
+.theme_moon_dark .list_filter_wrpr input:focus,
+.theme_dark .list_filter_wrpr input:focus,
+.theme_moon_dark .dd-list input[type="search"]:focus,
+.theme_dark .dd-list input[type="search"]:focus,
+.theme_moon_dark .dd-list .list_filter_wrpr input:focus,
+.theme_dark .dd-list .list_filter_wrpr input:focus {
+  border-color: var(--custom-accent) !important;
+  outline-color: var(--custom-accent) !important;
+  box-shadow: 0 0 0 1px var(--custom-accent) !important;
+}
+
+/* Advanced Search modal background */
+.theme_moon_dark .advanced-search-modal-backdrop,
+.theme_dark .advanced-search-modal-backdrop,
+.theme_moon_dark .advanced-search-modal,
+.theme_dark .advanced-search-modal,
+.theme_moon_dark #menu-advanced-search,
+.theme_dark #menu-advanced-search,
+.theme_moon_dark dialog.advanced-search-modal,
+.theme_dark dialog.advanced-search-modal {
+  background-color: var(--custom-bg) !important;
+}
+
+/* Modal inner content */
+.theme_moon_dark .advanced-search-modal-inner,
+.theme_dark .advanced-search-modal-inner,
+.theme_moon_dark .advanced-search-modal .section,
+.theme_dark .advanced-search-modal .section,
+.theme_moon_dark .advanced-search-modal .items,
+.theme_dark .advanced-search-modal .items {
+  background-color: var(--custom-bg) !important;
+}
+
+/* Modal footer */
+.theme_moon_dark .advanced-search-modal .as-footer,
+.theme_dark .advanced-search-modal .as-footer,
+.theme_moon_dark .advanced-search-modal .inputs,
+.theme_dark .advanced-search-modal .inputs {
+  background-color: var(--custom-bg-light) !important;
+}
+
+/* Build Search button - orange */
+.theme_moon_dark .advanced-search-modal .btn.--primary,
+.theme_dark .advanced-search-modal .btn.--primary {
+  background-color: var(--custom-accent) !important;
+  color: var(--custom-bg-dark) !important;
+}
+
+/* Advanced Search modal dropdowns */
+.theme_moon_dark .advanced-search-modal .k_ui_dropdown,
+.theme_dark .advanced-search-modal .k_ui_dropdown,
+.theme_moon_dark .advanced-search-modal button._0_k_ui_dropdown,
+.theme_dark .advanced-search-modal button._0_k_ui_dropdown,
+.theme_moon_dark .advanced-search-modal .input,
+.theme_dark .advanced-search-modal .input {
+  background-color: var(--custom-bg-light) !important;
+  border-color: var(--custom-bg-light) !important;
+}
+
+/* All dropdown arrows orange */
+.theme_moon_dark .arrow_dd,
+.theme_dark .arrow_dd,
+.theme_moon_dark svg.arrow_dd,
+.theme_dark svg.arrow_dd,
+.theme_moon_dark .k_ui_dropdown .arrow_dd,
+.theme_dark .k_ui_dropdown .arrow_dd,
+.theme_moon_dark ._0_k_ui_dropdown_first_item .arrow_dd,
+.theme_dark ._0_k_ui_dropdown_first_item .arrow_dd {
+  color: var(--custom-accent) !important;
+}
+
+.theme_moon_dark .arrow_dd path,
+.theme_dark .arrow_dd path,
+.theme_moon_dark svg.arrow_dd path,
+.theme_dark svg.arrow_dd path {
+  stroke: var(--custom-accent) !important;
+  fill: var(--custom-accent) !important;
+}
+
+/* Advanced Search modal dropdowns - preserve original styling */
+.theme_moon_dark .advanced-search-modal button._0_k_ui_dropdown,
+.theme_dark .advanced-search-modal button._0_k_ui_dropdown {
+  background-color: var(--custom-bg-light) !important;
+}
+
+/* Text inputs in the modal - preserve original styling */
+.theme_moon_dark .advanced-search-modal input[type="text"],
+.theme_dark .advanced-search-modal input[type="text"],
+.theme_moon_dark .advanced-search-modal input[type="date"],
+.theme_dark .advanced-search-modal input[type="date"],
+.theme_moon_dark .advanced-search-modal .input input,
+.theme_dark .advanced-search-modal .input input {
+  background-color: var(--custom-bg-light) !important;
+}
+
+/* Don't style the .input container itself, just the inner inputs */
+.theme_moon_dark .advanced-search-modal .k_ui_dropdown,
+.theme_dark .advanced-search-modal .k_ui_dropdown,
+.theme_moon_dark .advanced-search-modal .input,
+.theme_dark .advanced-search-modal .input {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* Lens dropdown list */
+.theme_moon_dark .k_ui_dropdown_data_list,
+.theme_dark .k_ui_dropdown_data_list,
+.theme_moon_dark ._0_k_ui_dropdown_data_list,
+.theme_dark ._0_k_ui_dropdown_data_list {
+  background-color: var(--custom-bg-light) !important;
+}
+
+/* Hide original text and replace with "US" */
+.theme_moon_dark .dd-toggle-label[data-header="United States (US)"] .textContent,
+.theme_dark .dd-toggle-label[data-header="United States (US)"] .textContent {
+  font-size: 0 !important;
+}
+
+.theme_moon_dark .dd-toggle-label[data-header="United States (US)"] .textContent::after,
+.theme_dark .dd-toggle-label[data-header="United States (US)"] .textContent::after {
+  content: "US" !important;
+  font-size: 14px !important;
+  color: var(--custom-accent) !important;
+}
+
+/* Advanced Search modal - heading and labels to muted gray */
+.theme_moon_dark .advanced-search-modal h2,
+.theme_dark .advanced-search-modal h2,
+.theme_moon_dark .advanced-search-modal h3,
+.theme_dark .advanced-search-modal h3,
+.theme_moon_dark .advanced-search-modal label,
+.theme_dark .advanced-search-modal label,
+.theme_moon_dark .advanced-search-modal .section h3,
+.theme_dark .advanced-search-modal .section h3,
+.theme_moon_dark .advanced-search-modal .item-row label,
+.theme_dark .advanced-search-modal .item-row label {
+  color: var(--custom-text-muted) !important;
+}
+
+/* Lens filter button - background like others */
+.theme_moon_dark ._0_lenses.filter-item,
+.theme_dark ._0_lenses.filter-item {
+  border: 1px solid rgb(69, 69, 73) !important;
+  background-color: rgb(47, 47, 49) !important;
+}
+
+/* Lens filter button - hover state */
+.theme_moon_dark ._0_lenses.filter-item:hover,
+.theme_dark ._0_lenses.filter-item:hover {
+  border: 1px solid rgb(90, 90, 96) !important;
+}
+
+/* Lens filter button - background like others */
+.theme_moon_dark ._0_lenses.filter-item,
+.theme_dark ._0_lenses.filter-item,
+.theme_moon_dark ._0_lenses .k_ui_dropdown,
+.theme_dark ._0_lenses .k_ui_dropdown,
+.theme_moon_dark ._0_lenses ._0_k_ui_dropdown,
+.theme_dark ._0_lenses ._0_k_ui_dropdown {
+  background-color: var(--custom-bg) !important;
+}
+
+/* Remove border from inner dropdown */
+.theme_moon_dark ._0_lenses .k_ui_dropdown,
+.theme_dark ._0_lenses .k_ui_dropdown,
+.theme_moon_dark ._0_lenses ._0_k_ui_dropdown,
+.theme_dark ._0_lenses ._0_k_ui_dropdown {
+  border: none !important;
+}
+
+/* More search dropdown - background */
+.theme_moon_dark ._0_more_search_dropdown ._0_k_ui_dropdown_data_list,
+.theme_dark ._0_more_search_dropdown ._0_k_ui_dropdown_data_list,
+.theme_moon_dark ._0_more_search_box,
+.theme_dark ._0_more_search_box,
+.theme_moon_dark ._0_more_search_bangs_list_box,
+.theme_dark ._0_more_search_bangs_list_box {
+  background-color: var(--custom-bg) !important;
+}
